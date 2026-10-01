@@ -12,6 +12,17 @@ The skill will be available in your next turn. Invoke it with `$pr-remediate` an
 
 For a manual installation, copy `skills/pr-remediate/` into `~/.codex/skills/pr-remediate/`.
 
+## Dependencies
+
+`pr-remediate` relies on the following companion skills when the selected blocker calls for their remediation route. Install them to use every route:
+
+- `resolving-merge-conflicts` for an in-progress merge or rebase conflict
+- `diagnosing-bugs` for unclear, flaky, or substantive CI failures
+- `tdd` for behavioral repairs after the test seam is agreed
+- `code-review` for meaningful behavioral changes after remediation
+
+These dependencies are available from [Matt Pocock's skills collection](https://github.com/mattpocock/skills). The PR triage and straightforward remediation paths do not invoke them.
+
 ## Safety
 
 The skill begins with fresh triage and only addresses selected pull requests. It never merges, deletes branches, or force-pushes without explicit authorization.
