@@ -1,0 +1,4 @@
+interface:
+  display_name: "PR Remediate"
+  short_description: "Authorized PR remediation coordinator"
+  default_prompt: "Use $pr-remediate to fix CI failures on MyHub PRs #976 and #983; do not merge or force-push."
