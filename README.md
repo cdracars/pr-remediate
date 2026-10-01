@@ -4,10 +4,20 @@
 
 ## Install
 
-In Codex, install this skill from this repository, then invoke it with `$pr-remediate` and identify the pull requests or blocker categories to repair.
+In a Codex chat, ask the built-in installer:
+
+> `$skill-installer install the skill from https://github.com/cdracars/pr-remediate/tree/main/.`
+
+The skill will be available in your next turn. Invoke it with `$pr-remediate` and identify the pull requests or blocker categories to repair.
+
+For a manual installation, copy this repository's contents into `~/.codex/skills/pr-remediate/`, preserving `SKILL.md` and `agents/openai.yaml`.
 
 ## Safety
 
 The skill begins with fresh triage and only addresses selected pull requests. It never merges, deletes branches, or force-pushes without explicit authorization.
 
 See [SKILL.md](SKILL.md) for the complete workflow and safety boundary.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
